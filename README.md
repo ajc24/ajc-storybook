@@ -23,7 +23,7 @@ Create a `main.js` file in the `.storybook` folder in your project workspace so 
 Add the following content to the file:
 
 ```javascript
-import { mainConfig } from 'ajc-storybook';
+const { mainConfig } = require('ajc-storybook');
 
 module.exports = mainConfig;
 ```
