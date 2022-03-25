@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/ajc24/ajc-storybook#readme",
   "dependencies": {
-    "@storybook/addon-a11y": "^6.4.14",
-    "@storybook/addon-docs": "^6.4.14",
-    "@storybook/react": "^6.4.14"
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/react": "^6.4.19"
   },
   "devDependencies": {
     "ajc-babel-config": "github:ajc24/ajc-babel-config",
