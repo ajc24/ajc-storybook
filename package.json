@@ -20,14 +20,14 @@
   },
   "homepage": "https://github.com/ajc24/ajc-storybook#readme",
   "dependencies": {
-    "@storybook/addon-a11y": "^6.4.21",
-    "@storybook/addon-docs": "^6.4.21",
-    "@storybook/react": "^6.4.21"
+    "@storybook/addon-a11y": "^6.5.3",
+    "@storybook/addon-docs": "^6.5.3",
+    "@storybook/react": "^6.5.3"
   },
   "devDependencies": {
     "ajc-babel-config": "github:ajc24/ajc-babel-config",
     "ajc-jest-react-testing-library": "github:ajc24/ajc-jest-react-testing-library",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
