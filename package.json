@@ -1,13 +1,8 @@
 {
   "name": "ajc-storybook",
   "version": "0.0.1",
-  "description": "Easy to import and re-use Storybook configuration for React projects.",
-  "main": "build",
+  "description": "Easy to import and re-use Storybook dependencies module for React projects.",
   "scripts": {
-    "build": "babel src --out-dir build",
-    "test": "npm run test-unit-coverage",
-    "test-unit": "jest --config=./tests/jest-config/unit.config.js",
-    "test-unit-coverage": "npm run test-unit -- --collectCoverage"
   },
   "repository": {
     "type": "git",
@@ -29,10 +24,5 @@
     "@storybook/react-webpack5": "^7.6.16",
     "@storybook/test": "^7.6.16",
     "storybook": "^7.6.16"
-  },
-  "devDependencies": {
-    "ajc-babel": "git://github.com/ajc24/ajc-babel",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }
