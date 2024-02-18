@@ -2,7 +2,7 @@
   "name": "ajc-storybook",
   "version": "0.0.1",
   "description": "Easy to import and re-use Storybook configuration for React projects.",
-  "main": "build/index.js",
+  "main": "build",
   "scripts": {
     "build": "babel src --out-dir build",
     "test": "npm run test-unit-coverage",
