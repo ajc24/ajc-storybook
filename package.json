@@ -1,0 +1,34 @@
+{
+  "name": "ajc-storybook",
+  "version": "0.0.1",
+  "description": "Easy to import and re-use Storybook configuration for React projects.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "test": "npm run test-unit-coverage",
+    "test-unit": "jest --config=./tests/jest-config/unit.config.js",
+    "test-unit-coverage": "npm run test-unit -- --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajc24/ajc-storybook.git"
+  },
+  "author": "Anthony Cox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajc24/ajc-storybook/issues"
+  },
+  "homepage": "https://github.com/ajc24/ajc-storybook#readme",
+  "dependencies": {
+    "babel-loader": "^9.1.3",
+    "@storybook/addon-a11y": "^7.6.16",
+    "@storybook/addon-docs": "^7.6.16",
+    "@storybook/cli": "^7.6.16",
+    "@storybook/react": "^7.6.16"
+  },
+  "devDependencies": {
+    "ajc-babel": "git://github.com/ajc24/ajc-babel",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
