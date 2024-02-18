@@ -1,13 +1,32 @@
 /**
  * Developed by Anthony Cox in 2024
  */
-const mainConfig = {
-	stories: [
-		'../stories/**/*.stories.js'
-	],
-  addons: [
-	'@storybook/addon-a11y',
-	'@storybook/addon-docs'
+
+/**
+ * Storybook main configuration file
+ * @type { import('@storybook/react-webpack5').StorybookConfig }
+ */
+const config = {
+  stories: [
+    "../stories/**/*.mdx",
+    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
+    "@storybook/addon-interactions",
+  ],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {
+      builder: {
+        useSWC: true,
+      },
+    },
+  },
+  docs: {
+    autodocs: "tag",
+  },
 };
-export default mainConfig;
+export default config;

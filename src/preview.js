@@ -1,17 +1,21 @@
 /**
  * Developed by Anthony Cox in 2024
  */
-const previewConfig = {
-  options: {
-    isFullScreen: false,
-    showNav: true,
-    showPanel: false,
-    showSearchBox: false,
-    panelPosition: 'bottom',
-    sortStoriesByKind: false,
-    hierarchySeparator: '/',
-    hierarchyRootSeparator: null,
-    selectedAddonPanel: undefined,
-  }
+
+/**
+ * Storybook preview configuration file
+ * @type { import('@storybook/react').Preview }
+ */
+const preview = {
+  parameters: {
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+    },
+  },
 };
-export default previewConfig;
+
+export default preview;
